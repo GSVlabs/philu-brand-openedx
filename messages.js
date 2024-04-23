@@ -14,13 +14,18 @@ const messages = defineMessages({
   },
   'footer.staticPages.tos': {
     id: 'footer.staticPages.tos',
-    defaultMessage: 'Terms of Service',
-    description: 'The text for the TOS link title in the footer.',
+    defaultMessage: 'Terms of Use',
+    description: 'The text for the Terms of Use link title in the footer.',
   },
   'footer.staticPages.contact': {
     id: 'footer.staticPages.contact',
     defaultMessage: 'Contact Us',
     description: 'The text for the contact us link title in the footer.',
+  },
+  'footer.staticPages.faq': {
+    id: 'footer.staticPages.faq',
+    defaultMessage: 'FAQ',
+    description: 'The text for the FAQ link title in the footer.',
   },
 });
 

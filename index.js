@@ -1,6 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
-import { getConfig } from '@edx/frontend-platform';
-
 import messages from './messages';
 
 export { default as logoHeader } from './logo.svg';
@@ -9,62 +6,47 @@ export { default as svgSprite } from './svg-sprite.svg';
 
 export const footerIcons = [
   {
-    url: '#',
-    title: 'facebook',
-    icon: 'ico-facebook',
-  },
-  {
-    url: '#',
-    title: 'twitter-x',
-    icon: 'ico-twitter-x-circle',
-  },
-  {
-    url: '#',
+    url: 'https://www.linkedin.com/company/philanthropyuniversity/',
     title: 'linkedin',
     icon: 'ico-linkedin',
   },
   {
-    url: '#',
+    url: 'https://www.facebook.com/philanthropyuniversity',
+    title: 'facebook',
+    icon: 'ico-facebook',
+  },
+  {
+    url: 'https://twitter.com/philanthropyuni?lang=en',
+    title: 'twitter-x',
+    icon: 'ico-twitter-x-circle',
+  },
+  {
+    url: 'https://www.youtube.com/channel/UCQ6qeELvsDgIt4VO2bP0TBw',
     title: 'youtube',
     icon: 'ico-youtube',
-  },
-  {
-    url: '#',
-    title: 'telegram',
-    icon: 'ico-telegram',
-  },
-  {
-    url: '#',
-    title: 'instagram',
-    icon: 'ico-instagram',
-  },
-  {
-    url: '#',
-    title: 'mail',
-    icon: 'ico-envelope',
   },
 ];
 
 export const footerLinks = [
   {
-    href: `${getConfig().LMS_BASE_URL}/about`,
+    href: 'https://www.philanthropyu.org/about-us',
     message: messages['footer.staticPages.about'],
-    targetBlank: false,
+    targetBlank: true,
   },
   {
-    href: `${getConfig().LMS_BASE_URL}/privacy`,
-    message: messages['footer.staticPages.privacy'],
-    targetBlank: false,
-  },
-  {
-    href: `${getConfig().LMS_BASE_URL}/tos`,
+    href: 'https://www.philanthropyu.org/terms-of-use',
     message: messages['footer.staticPages.tos'],
-    targetBlank: false,
+    targetBlank: true,
   },
   {
-    href: `${getConfig().LMS_BASE_URL}/support/contact_us`,
-    message: messages['footer.staticPages.contact'],
-    targetBlank: false,
+    href: 'https://www.philanthropyu.org/privacy-policy',
+    message: messages['footer.staticPages.privacy'],
+    targetBlank: true,
+  },
+  {
+    href: 'https://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-quince.master/index.html',
+    message: messages['footer.staticPages.faq'],
+    targetBlank: true,
   },
 ];
 

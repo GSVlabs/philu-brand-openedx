@@ -1,7 +1,7 @@
 // Use this file to set SASS variables for @edx/paragon
 // See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
 
-$primary: #c16800 !default;
+$primary: #61b4e4 !default;
 $brand: $primary !default;
 $link-color: $primary !default;
 $black: #000;
@@ -11,23 +11,24 @@ $inline-link-color: $primary;
 // common settings
 $container-width: 1230px;
 $border-radius: 3px;
-$font: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $collapsible-card-spacer-icon: 1.5rem;
 
 // settings for header
-$header-vertical-padding: 30px;
-$header-logo-height: 45px;
-$header-logo-height-mobile: $header-logo-height;
+$header-vertical-padding: 38px;
+$header-logo-height: 29px;
+$header-logo-height-mobile: 25px;
 $header-nav-link-color: $primary;
 $header-nav-link-color-hover: darken($primary, 20%);
+$header-bg: #083954;
 
 // settings for footer
-$footer-logo-height: $header-logo-height;
-$footer-bg: #2b2422;
+$footer-logo-height: 60px;
+$footer-bg: $header-bg;
 $footer-nav-link-color: #fff;
 $footer-nav-link-color-hover: darken($footer-nav-link-color, 20%);
 $footer-support-text-and-logo: #fff;
-$footer-social-link-bg: #ffdf8c;
+$footer-social-link-bg: #00afaa;
 $footer-social-link-bg-hover: lighten($footer-social-link-bg, 20%);
 
 // settings for cookie banner
@@ -35,7 +36,7 @@ $cookie-banner-cta-base: $primary;
 $cookie-banner-cta-hover: darken($cookie-banner-cta-base, 20%);
 
 // login and regisration pages
-$login-registration-left-bg: #f2f5f8;
+$login-registration-left-bg: #083954;
 
 // default bootstrap variables
 $col-gutter-width: 24px;
