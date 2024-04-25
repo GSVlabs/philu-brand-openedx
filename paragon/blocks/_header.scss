@@ -4,6 +4,7 @@
         box-shadow: 0 0 6px 0 rgba($black, .75);
         padding: $header-vertical-padding 0;
         z-index: 4;
+        background: $header-bg;
 
         .logo {
             padding: 0;
@@ -106,6 +107,10 @@
             span:not(.course-title) {
                 padding-bottom: .2rem;
             }
+
+            span {
+                color: $white;
+            }
         }
 
         .user-dropdown .btn {
@@ -116,11 +121,16 @@
         .container-fluid > a:not(.logo) {
             margin-left: auto;
         }
+
+        a.text-gray-700 {
+            color: $white !important;
+        }
     }
 
     header.site-header-mobile {
         padding: $header-vertical-padding 0;
         height: auto;
+        background: $header-bg;
 
         .logo img {
             height: $header-logo-height;

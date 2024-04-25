@@ -49,3 +49,10 @@ body {
         background: #e1dddb;
     }
 }
+
+// Fix btn-primary color
+
+.btn-primary,
+.btn-brand {
+    color: $white;
+}

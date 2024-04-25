@@ -9,10 +9,6 @@
             @include media-breakpoint-down("lg") {
                 margin-left: 0;
             }
-
-            @include media-breakpoint-down("xs") {
-                height: 38px;
-            }
         }
 
         .pgn__hyperlink + .d-flex {
@@ -93,11 +89,22 @@
             fill: $login-registration-left-bg;
         }
 
+        h1.display-2.text-white {
+            max-width: none !important;
+            margin-left: 52px !important;
+            font-size: 58px;
+            line-height: 74px;
+
+            @media screen and (max-width: 1250px) {
+                font-size: 55px;
+            }
+        }
+
         h1.text-white,
         h2.complete-your-profile,
         h2.display-1,
         h2.h1 {
-            color: $black !important;
+            color: $white !important;
 
             .text-accent-a {
                 color: $primary !important;
