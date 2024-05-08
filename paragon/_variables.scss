@@ -22,6 +22,14 @@ $header-nav-link-color: $primary;
 $header-nav-link-color-hover: darken($primary, 20%);
 $header-bg: #083954;
 
+// settings for user dropdown
+$dropdown-section-name-color: #003a56;
+$dropdown-item-color: #849aa5;
+$dropdown-item-color-hover: #4a4a4a;
+$dropdown-item-bg-color-hover: #f4f5f8;
+$dropdown-item-border: 1px solid #e4e5ec;
+$dropdown-shadow: 0 0 10px 0 rgba(69, 73, 91, .22);
+
 // settings for footer
 $footer-logo-height: 60px;
 $footer-bg: $header-bg;
