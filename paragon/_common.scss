@@ -56,3 +56,11 @@ body {
 .btn-brand {
     color: $white;
 }
+
+.edx-cookie-banner-wrapper {
+    font-family: $font !important;
+
+    .alert-dialog {
+        max-width: 890px !important;
+    }
+}
