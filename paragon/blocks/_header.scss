@@ -70,6 +70,42 @@
         }
     }
 
+    div.site-header-desktop {
+        & > .container-fluid {
+            @media screen and (max-width: 479px) {
+                padding: 0 !important;
+            }
+
+            .pgn__action-row {
+                & > .w-25 {
+                    width: 30% !important;
+                }
+
+                & > a {
+                    @media screen and (max-width: 479px) {
+                        width: 32px;
+                        overflow: hidden;
+                    }
+                }
+
+                .logo {
+                    @include media-breakpoint-down(lg) {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .course-title-lockup {
+                min-width: 0;
+                text-decoration: none !important;
+
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+
     header.learning-header {
         height: auto;
         font-family: $font;
