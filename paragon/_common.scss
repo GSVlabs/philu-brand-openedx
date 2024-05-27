@@ -56,3 +56,11 @@ body {
 .btn-brand {
     color: $white;
 }
+
+.pgn__pageBanner__accentA a {
+    color: $white !important;
+
+    &:hover {
+        text-decoration-color: $white !important;
+    }
+}
