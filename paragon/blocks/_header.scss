@@ -61,7 +61,9 @@
                 font-size: 14px;
                 color: $dropdown-item-color;
 
-                &:hover {
+                &:hover,
+                &:focus,
+                &:active {
                     background: $dropdown-item-bg-color-hover;
                     color: $dropdown-item-color-hover;
                 }
@@ -91,6 +93,11 @@
         .menu-trigger:not(:hover, :active) {
             color: $white;
             border-color: $white;
+        }
+
+        .menu.expanded .menu-trigger {
+            background: $white;
+            color: $gray-700;
         }
 
         .secondary-menu-container {
@@ -206,6 +213,10 @@
             height: auto;
             padding: .5625rem 1rem;
 
+            &[aria-expanded="true"] {
+                color: $gray-700 !important;
+            }
+
             &:not(:hover, :focus, :active) {
                 color: $white;
                 border-color: $white;
@@ -257,12 +268,13 @@
         height: auto;
         background: $header-bg;
 
+        &:before {
+            content: "";
+            width: 100%;
+        }
+
         .logo img {
             height: $header-logo-height;
-
-            @include media-breakpoint-down(xs) {
-                height: $header-logo-height-mobile;
-            }
         }
 
         .menu-content {
