@@ -63,6 +63,8 @@
 
         .bg-light-200 {
             h1 {
+                color: $white;
+
                 @include media-breakpoint-down("lg") {
                     margin: 1rem 0 .5rem;
                     font-size: 18px;
@@ -133,6 +135,142 @@
 
             h1.data-hj-suppress {
                 max-width: none;
+                color: $white;
+            }
+        }
+
+        .pp-page-content {
+            @include media-breakpoint-down(xs) {
+                margin: 1.5rem .5rem !important;
+            }
+        }
+
+        h1.welcome-to-platform {
+            color: $white;
+            margin-bottom: 40px;
+        }
+
+        .organization-select-info {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .organization-dropdown-item {
+            font-size: 14px;
+
+            & span {
+                color: #888;
+                margin-left: 8px;
+            }
+        }
+
+        #react-select-2-option-0 {
+            background: none !important;
+        }
+
+        .authn-organization-form {
+            line-height: normal;
+
+            .pgn__form-control-decorator-group {
+                margin-right: 0 !important;
+            }
+
+            .pgn__form-label {
+                margin-bottom: 1rem;
+                line-height: 1.4;
+                font-size: 15px;
+            }
+
+            #is_organization_registered .pgn__form-label {
+                @media screen and (max-width: 450px) {
+                    max-width: 280px;
+                }
+            }
+
+            #react-select-2-option-0 {
+                line-height: 1.1;
+            }
+        }
+
+        .authn-tooltip-icon {
+            color: $white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+            background: $authn-tooltip-bg;
+            text-align: center;
+            font-weight: 700;
+            font-size: 12px;
+            position: relative;
+            top: 2px;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover .authn-tooltip {
+                display: block;
+            }
+
+            .authn-tooltip {
+                display: none;
+                position: absolute;
+                color: $white;
+                background: $authn-tooltip-bg;
+                z-index: 1;
+                font: 400 13px/1.5 $font;
+                padding: 10px 15px;
+                border-radius: 4px;
+                width: 175px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                }
+
+                @media screen and (min-width: 611px) {
+                    left: calc(100% + 15px);
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    &:before {
+                        left: -12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-width: 8px 12px 8px 0;
+                        border-color: transparent $authn-tooltip-bg transparent transparent;
+                    }
+                }
+
+                @media screen and (max-width: 610px) {
+                    top: calc(100% + 15px);
+                    right: calc(100% - #{$authn-tooltip-arrow-offset});
+
+                    &:before {
+                        top: -11px;
+                        right: 0;
+                        transform: translateX(-20px);
+                        border-width: 0 8px 12px;
+                        border-color: transparent transparent $authn-tooltip-bg;
+                    }
+                }
+
+                @media screen and (max-width: 450px) {
+                    right: auto;
+                    left: calc(100% - #{$authn-tooltip-arrow-offset});
+
+                    &:before {
+                        top: -11px;
+                        left: 0;
+                        transform: translateX(20px);
+                        border-width: 0 8px 12px;
+                        border-color: transparent transparent $authn-tooltip-bg;
+                    }
+                }
             }
         }
     }
@@ -204,5 +342,15 @@
     .small-screen-top-stripe {
         height: .25rem;
         background: $primary;
+    }
+}
+
+#paragon-portal-root {
+    .authn-modal-title {
+        font-size: 1.2rem;
+    }
+
+    .authn-modal-btn {
+        font-size: 17px;
     }
 }
