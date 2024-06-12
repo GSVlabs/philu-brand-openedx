@@ -3,3 +3,128 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+#my-organization {
+    label {
+        font: 700 12px/1.25 $font;
+    }
+
+    .organization-select {
+        padding-inline-end: .5rem;
+        margin-bottom: 5px;
+    }
+
+    .organization-select-info {
+        color: #888;
+        font-size: 14px;
+    }
+
+    .organization-dropdown-item {
+        font-size: 14px;
+
+        & span {
+            color: #888;
+            margin-left: 8px;
+        }
+    }
+
+    [id$="-option-0"] {
+        background: none !important;
+    }
+}
+
+#isOrgRegistered label {
+    position: relative;
+    margin-right: 0 !important;
+}
+
+.account-tooltip-icon {
+    color: $white;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+    background: $authn-tooltip-bg;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media screen and (min-width: 481px) {
+        position: relative;
+    }
+
+    &:hover .account-tooltip {
+        display: block;
+    }
+
+    .account-tooltip {
+        display: block;
+        position: absolute;
+        color: $white;
+        background: $authn-tooltip-bg;
+        z-index: 1;
+        font: 400 13px/1.5 $font;
+        padding: 10px 15px;
+        border-radius: 4px;
+        text-align: left;
+        left: calc(100% + 15px);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 350px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            left: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 8px 12px 8px 0;
+            border-color: transparent $authn-tooltip-bg transparent transparent;
+        }
+
+        p {
+            margin: 0;
+
+            & + p {
+                margin-top: 10px;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 310px;
+        }
+
+        @media screen and (max-width: 650px) {
+            top: calc(100% + 15px);
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:before {
+                left: 50%;
+                top: -11px;
+                transform: translateX(-50%);
+                border-width: 0 8px 12px !important;
+                border-color: transparent transparent $authn-tooltip-bg !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            left: 0;
+            transform: none !important;
+            width: 296px;
+
+            &:before {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+}
