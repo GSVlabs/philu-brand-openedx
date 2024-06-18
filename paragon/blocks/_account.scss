@@ -63,7 +63,7 @@
     }
 
     .account-tooltip {
-        display: block;
+        display: none;
         position: absolute;
         color: $white;
         background: $authn-tooltip-bg;
